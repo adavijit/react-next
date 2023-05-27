@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'utils/with-i18next';
 import styled from '@emotion/styled';
 
-const ItemLink = styled.a`
+const ItemLink = styled.span`
   color: #757575;
   text-decoration: none;
   margin-left: -5px;

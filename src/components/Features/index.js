@@ -90,12 +90,6 @@ export function Features({ t }) {
             </FeatureItem>
 
             <FeatureItem>
-              <Title>Immer</Title>
-
-              <Content>{t('features.immer')}</Content>
-            </FeatureItem>
-
-            <FeatureItem>
               <Title>@testing-library/react</Title>
 
               <Content>{t('features.testingLibraryReact')}</Content>

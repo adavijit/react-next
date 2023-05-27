@@ -29,4 +29,5 @@ module.exports = {
   testRegex: 'tests/.*\\.test\\.js$',
   setupFilesAfterEnv: ['<rootDir>/config/jest/jest-dom-extend-expect'],
   snapshotSerializers: [],
+  testEnvironment: "jsdom"
 };

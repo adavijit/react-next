@@ -8,15 +8,15 @@ import Footer from 'components/Footer';
 function Layout({ children }) {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
       <main>
-        {/* <Banner /> */}
+        <Banner />
 
         {children}
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

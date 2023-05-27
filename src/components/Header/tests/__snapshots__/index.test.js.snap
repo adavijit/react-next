@@ -3,34 +3,42 @@
 exports[`<Header /> Should render correctly 1`] = `
 <div>
   <header
-    class="css-15etwxy-HeaderRoot ez4dfsd5"
+    class="css-15etwxy-HeaderRoot e18nlj2v5"
   >
     <div
-      class="css-kubhes-HeaderContainer ez4dfsd4"
+      class="css-kubhes-HeaderContainer e18nlj2v4"
     >
       <nav
-        class="css-11njdmq-NavRoot ez4dfsd3"
+        class="css-11njdmq-NavRoot e18nlj2v3"
       >
         <div
-          class="css-1hbc6ct-ListItem ez4dfsd2"
+          class="css-1hbc6ct-ListItem e18nlj2v2"
         >
           <a
-            class="css-15ani8u-ItemLink epoma0f0"
-            href="/#features"
-          />
+            href="#features"
+          >
+            <span
+              class="css-15ani8u-ItemLink er605q0"
+              href="#features"
+            />
+          </a>
           <a
-            class="css-15ani8u-ItemLink epoma0f0"
-            href="/#exampleGetApi"
-          />
+            href="#exampleGetApi"
+          >
+            <span
+              class="css-15ani8u-ItemLink er605q0"
+              href="#exampleGetApi"
+            />
+          </a>
         </div>
         <div
-          class="css-13ln5v8-Space ez4dfsd0"
+          class="css-13ln5v8-Space e18nlj2v0"
         />
         <div
-          class="css-1at58d5-ListActions ez4dfsd1"
+          class="css-1at58d5-ListActions e18nlj2v1"
         >
           <select
-            class="css-1j005nt-SelectRoot e1ut4ry90"
+            class="css-1j005nt-SelectRoot e8vzfuc0"
             id="languages"
             name="languages"
           >

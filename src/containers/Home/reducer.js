@@ -1,5 +1,3 @@
-import produce from 'immer';
-
 import { getShowcases } from './actions';
 
 export const initialState = {
@@ -9,28 +7,36 @@ export const initialState = {
   showcases: [],
 };
 
-const showcasesReducer = (state = initialState, { type, payload }) =>
-  produce(state, draft => {
-    switch (type) {
-      case getShowcases.REQUEST:
-        draft.loading = true;
+const showcasesReducer = (state = initialState, { type, payload }) => {
+  switch (type) {
+    case getShowcases.REQUEST:
+      return {
+        ...state,
+        loading: true
+      };
+      break;
 
-        break;
+    case getShowcases.SUCCESS:
+      
+      return {
+        ...state,
+        loading: false,
+        fetched: true,
+        showcases: payload.data
+      }
+      break;
 
-      case getShowcases.SUCCESS:
-        draft.loading = false;
-        draft.fetched = true;
-        draft.showcases = payload.data;
-
-        break;
-
-      case getShowcases.FAILURE:
-        draft.loading = false;
-        draft.fetched = false;
-        draft.error = payload;
-
-        break;
-    }
-  });
+    case getShowcases.FAILURE:
+      return {
+        ...state,
+        loading: false,
+        fetched: false,
+        showcases: payload
+      }
+      break;
+    default: // need this for default case
+      return state
+  }
+};
 
 export default showcasesReducer;
